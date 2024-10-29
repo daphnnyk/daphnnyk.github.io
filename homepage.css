@@ -1,0 +1,1056 @@
+
+/* ---------------------------------- */
+/*  HOME PAGE STYLES START HERE      */
+/* ---------------------------------- */
+
+/* LARGE DESKTOP: Minimum 1400px */
+@media (min-width: 1440px) {
+    .intro,.section-divider-wrapper,.adventura-section, .vitis-section,.tempus-section, .carousel-wrapper {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .intro {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        line-height: 1.6;
+        text-align: left;
+        max-width: 100%; 
+    }
+
+    .intro p {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .image-column img, .vitis-section .image-column img, .tempus-section .image-column img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .adventura-section, .vitis-section, .tempus-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        padding: 100px 0px;
+    }
+
+    .text-column {
+        flex: 1;
+    }
+
+    .text-column h2 {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .text-column p3 {
+        margin-bottom: 20px;
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: column;
+        gap: 8px; 
+        align-items: center;
+    }
+
+    .tag {
+        background-color: #ebe0c7;
+        color: #6d5b31;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: none;
+    }
+
+    .tags-horizontal {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Controls the spacing between tags */
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+    
+        .carousel-wrapper {
+            margin-top: 80px;
+            margin-bottom: 80px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .carousel-items {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+            width: 100%; 
+            justify-content: space-between;
+            gap: 10px; 
+        }
+        
+        .carousel-item {
+            flex: 1 0 24%; 
+            max-width: 24%;
+        
+            box-sizing: border-box;
+            padding: 8px;
+            text-align: center;
+            height: auto;
+        }
+        
+        .carousel-page {
+            display: none;
+        }
+        
+        .carousel-page.active {
+            display: flex; 
+            justify-content: center;
+        }
+        
+        
+        /* Carousel Content */
+        .carousel-content {
+            background-color: white;
+            border: 1px solid #ebe0c7;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 350px;
+            height: 100%; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        /* Content inside each carousel item */
+        .carousel-content {
+            background-color: white;
+            border: 1px solid #ebe0c7;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: inherit;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         /* Add Flexbox properties */
+             display: flex;
+             flex-direction: column;
+             justify-content: space-between; 
+             align-items: center;
+        }
+        
+        /* Carousel Tag Styles */
+        .carousel-tag {
+            background-color: #ebe0c7;
+            align-items: center;
+            overflow-wrap: break-word;
+            color: #6d5b31;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            text-transform: none;
+            font-weight: 300;
+            margin: 5px;
+        }
+
+        /* Navigation Dots */
+        .carousel-navigation {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 80px;
+        }
+
+        .carousel-navigation .dot {
+            width: 12px;
+            height: 12px;
+            background-color: #a68b01; /* Default dot background */
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        /* Active Dot */
+        .carousel-navigation .dot.active {
+            background-color: transparent; /* Transparent center */
+            border: 2px solid #a68b01; /* Solid border matching inactive dots */
+            width: 12px; /* Keep the dot size consistent */
+            height: 12px; /* Ensure consistent size */
+        }
+
+        /* Hover Effect (optional) */
+        .carousel-navigation .dot:hover {
+            background-color: #a68b01;
+            border: 2px solid #a68b01;
+        }
+
+        /* Arrows */
+        .arrow {
+            cursor: pointer;
+            width: 20px;
+            height: auto;
+            z-index: 10; /* Ensure arrows are above the carousel */
+        }
+
+        .left-arrow {
+            margin-left: 10px;
+            margin-right: 20px;
+            color:#a68b01
+        }
+
+        .right-arrow {
+            margin-left: 20px;
+            margin-right: 10px;
+            color:#a68b01
+        }
+}
+
+
+/* DESKTOP: Between 1200px - 1440px */
+@media (min-width: 1200px) and (max-width:1439px) {
+    .intro,.section-divider-wrapper,.adventura-section, .vitis-section,.tempus-section, .carousel-wrapper {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .intro {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        line-height: 1.6;
+        text-align: left;
+        max-width: 100%; /* Ensure it doesn't exceed the container width */
+    }
+
+    .intro p {
+        text-align: left;
+        max-width: 100%; /* Ensure it doesn't exceed the container width */
+    }
+
+    /* Image Column */
+    .image-column img, .vitis-section .image-column img, .tempus-section .image-column img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Project Column */
+    .adventura-section, .vitis-section, .tempus-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        padding: 100px 0px;
+    }
+
+    .text-column {
+        flex: 1;
+    }
+
+    .text-column h2 {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .text-column p3 {
+        margin-bottom: 20px;
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: column; /* Stack the tags vertically */
+        gap: 8px; /* Adds spacing between each tag */
+        align-items: center; /* Center-aligns tags within the container */
+    }
+
+    .tag {
+        background-color: #ebe0c7;
+        color: #6d5b31;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: none;
+    }
+
+    .tags-horizontal {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* Controls the spacing between tags */
+        justify-content: flex-start;
+        margin-top: 20px;
+        }
+
+    .carousel-wrapper {
+            margin-top: 80px;
+            margin-bottom: 80px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    .carousel-items {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+            width: 100%; /* Ensures the container stretches horizontally */
+            justify-content: space-between;
+            gap: 10px; /* Adds space between the items */
+        }
+        
+     .carousel-item {
+            flex: 1 0 24%; /* Ensures 4 items are displayed in a row */
+            max-width: 24%;
+            box-sizing: border-box;
+            padding: 8px;
+            text-align: center;
+            height: auto;
+        }
+        
+      .carousel-page {
+            display: none; /* Hide all pages by default */
+        }
+        
+      .carousel-page.active {
+            display: flex; /* Display active carousel page */
+            justify-content: center;
+        }
+    
+      .carousel-content {
+            background-color: white;
+            border: 1px solid #ebe0c7;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 350px; /* Default height for larger screens */
+            height: 100%; /* Fill the available height */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        /* Content inside each carousel item */
+        .carousel-content {
+            background-color: white;
+            border: 1px solid #ebe0c7;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: inherit;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         /* Add Flexbox properties */
+             display: flex;
+             flex-direction: column; /* Stack items vertically */
+             justify-content: space-between; /* Push content to top and bottom */
+             align-items: center;
+        }
+
+        /* Carousel Tag Styles */
+        .carousel-tag {
+            background-color: #ebe0c7;
+            align-items: center;
+            overflow-wrap: break-word;
+            color: #6d5b31;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            text-transform: none;
+            font-weight: 300;
+            margin: 5px;
+        }
+
+        /* Navigation Dots */
+        .carousel-navigation {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 80px;
+        }
+
+        .carousel-navigation .dot {
+            width: 12px;
+            height: 12px;
+            background-color: #a68b01; /* Default dot background */
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        /* Active Dot */
+        .carousel-navigation .dot.active {
+            background-color: transparent; /* Transparent center */
+            border: 2px solid #a68b01; /* Solid border matching inactive dots */
+            width: 12px; /* Keep the dot size consistent */
+            height: 12px; /* Ensure consistent size */
+        }
+
+        /* Hover Effect (optional) */
+        .carousel-navigation .dot:hover {
+            background-color: #a68b01;
+            border: 2px solid #a68b01;
+        }
+
+        /* Arrows */
+        .arrow {
+            cursor: pointer;
+            width: 20px;
+            height: auto;
+            z-index: 10; /* Ensure arrows are above the carousel */
+        }
+
+        .left-arrow {
+            margin-left: 10px;
+            margin-right: 20px;
+            color:#a68b01
+        }
+
+        .right-arrow {
+            margin-left: 20px;
+            margin-right: 10px;
+            color:#a68b01
+        }
+}
+
+/* SMALL DESKTOP: Between 900px - 1200px */
+@media (min-width: 900px) and (max-width:1199px) {
+
+    .intro,.section-divider-wrapper,.adventura-section, .vitis-section,.tempus-section, .carousel-wrapper {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .intro {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        line-height: 1.6;
+        text-align: left;
+        max-width: 100%; /* Ensure it doesn't exceed the container width */
+    }
+
+    .intro p {
+        text-align: left;
+        max-width: 100%; /* Ensure it doesn't exceed the container width */
+    }
+
+
+    /* Image Column */
+    .image-column img, .vitis-section .image-column img, .tempus-section .image-column img {
+        min-width: 50%;
+        max-width:500px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Project Column */
+    .adventura-section, .vitis-section, .tempus-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        padding: 40px 0px;
+        min-width: 300px;;
+    }
+
+    .text-column {
+        flex: 1;
+    }
+
+    .text-column h2 {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .text-column p3 {
+        margin-bottom: 20px;
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: column; /* Stack the tags vertically */
+        gap: 8px; /* Adds spacing between each tag */
+        align-items: center; /* Center-aligns tags within the container */
+    }
+
+    .tag {
+        background-color: #ebe0c7;
+        color: #6d5b31;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: none;
+    }
+
+    .tags-horizontal {
+        display: flex;
+        gap: 10px; /* Space between the tags */
+        justify-content: flex-start; /* Left-aligns the tags */
+        flex-wrap: wrap; /* Ensure tags don't overflow and wrap if needed */
+        margin-top: 20px;
+        }
+        
+    .carousel-wrapper {
+            margin-top: 80px;
+            margin-bottom: 80px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    .carousel-items {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+            width: 100%; /* Ensures the container stretches horizontally */
+            justify-content: space-between;
+            gap: 10px; /* Adds space between the items */
+        }
+        
+    .carousel-item {
+            flex: 1 0 50%; /* Ensures 4 items are displayed in a row */
+            max-width: 50%;
+            min-height: inherit; /* Adjust height responsively */
+            margin-bottom: 20px; /* Add space between rows */
+            box-sizing: border-box;
+            padding: 8px;
+            text-align: center;
+            height: auto;
+        }
+        
+    .carousel-page {
+            display: none; /* Hide all pages by default */
+        }
+        
+    .carousel-page.active {
+            display: flex; /* Display active carousel page */
+            flex-wrap: wrap; /* Allow items to wrap into rows */
+            justify-content: space-between;
+        }
+        
+        
+    /* Carousel Content */
+    .carousel-content {
+            background-color: white;
+            border: 1px solid #ebe0c7;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 350px; /* Default height for larger screens */
+            height: 100%; /* Fill the available height */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+     /* Content inside each carousel item */
+     .carousel-content {
+            background-color: white;
+            border: 1px solid #ebe0c7;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: inherit;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         /* Add Flexbox properties */
+             display: flex;
+             flex-direction: column; /* Stack items vertically */
+             justify-content: space-between; /* Push content to top and bottom */
+             align-items: center;
+        }
+
+    /* Carousel Tag Styles */
+    .carousel-tag {
+            background-color: #ebe0c7;
+            align-items: center;
+            overflow-wrap: break-word;
+            color: #6d5b31;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            text-transform: none;
+            font-weight: 300;
+            margin: 5px;
+        }
+
+    /* Navigation Dots */
+    .carousel-navigation {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 80px;
+        }
+
+    .carousel-navigation .dot {
+            width: 12px;
+            height: 12px;
+            background-color: #a68b01; /* Default dot background */
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+    /* Active Dot */
+    .carousel-navigation .dot.active {
+            background-color: transparent; /* Transparent center */
+            border: 2px solid #a68b01; /* Solid border matching inactive dots */
+            width: 12px; /* Keep the dot size consistent */
+            height: 12px; /* Ensure consistent size */
+        }
+
+    /* Hover Effect (optional) */
+    .carousel-navigation .dot:hover {
+            background-color: #a68b01;
+            border: 2px solid #a68b01;
+        }
+
+    /* Arrows */
+    .arrow {
+            cursor: pointer;
+            width: 20px;
+            height: auto;
+            z-index: 10; /* Ensure arrows are above the carousel */
+        }
+
+    .left-arrow {
+            margin-left: 10px;
+            margin-right: 20px;
+            color:#a68b01
+        }
+
+    .right-arrow {
+            margin-left: 20px;
+            margin-right: 10px;
+            color:#a68b01
+        }
+}
+
+/* TABLET: Between 600px - 1200px */
+@media (min-width: 600px) and (max-width:899px) {
+
+    .intro,.section-divider-wrapper,.adventura-section, .vitis-section,.tempus-section, .carousel-wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .intro {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        line-height: 1.6;
+        text-align: left;
+        max-width: 100%; /* Ensure it doesn't exceed the container width */
+    }
+
+    .intro p {
+        text-align: left;
+        max-width: 100%; /* Ensure it doesn't exceed the container width */
+    }
+
+    /* Project Column */
+    .adventura-section, .vitis-section, .tempus-section {
+        display: flex;
+        flex-direction: column-reverse; /* Reverse order: image above text */
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Adjusts spacing between the image and text */
+        text-align: center; /* Center-align text for smaller screens */
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .image-column img {
+        max-width: 500px;
+        width:100%;
+        height: auto;
+
+    }
+
+    .image-column {
+        order: -1;
+        justify-content: center;
+        box-shadow: none;
+    }
+
+    .text-column {
+        width: 100%; /* Text also takes full width */
+        min-width: 200px;
+        text-align: left;
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: column; /* Stack the tags vertically */
+        gap: 8px; /* Adds spacing between each tag */
+        align-items: center; /* Center-aligns tags within the container */
+        margin-top: 20px;
+    }
+
+    .tag {
+        background-color: #ebe0c7;
+        color: #6d5b31;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: none;
+    }
+
+    .tags-horizontal {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Controls the spacing between tags */
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .carousel-wrapper {
+            max-width: 100%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+        .carousel-items {
+                display: flex;
+                transition: transform 0.3s ease-in-out;
+                width: 100%; /* Ensures the container stretches horizontally */
+                justify-content: space-between;
+                gap: 10px; /* Adds space between the items */
+            }
+            
+            .carousel-item {
+                flex: 1 0 100%; 
+                max-width: 100%;
+                min-height: inherit;
+                box-sizing: border-box;
+                padding: 8px;
+                text-align: center;
+                height: auto;
+            }
+            
+            .carousel-page {
+                display: none; /* Hide all pages by default */
+            }
+            
+            .carousel-page.active {
+                display: flex; /* Display active carousel page */
+                flex-direction: column;
+            }
+            
+            
+            /* Carousel Content */
+            .carousel-content {
+                background-color: white;
+                border: 1px solid #ebe0c7;
+                padding: 20px;
+                border-radius: 10px;
+                min-height: 350px; /* Default height for larger screens */
+                height: 100%; /* Fill the available height */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            
+            /* Content inside each carousel item */
+            .carousel-content {
+                background-color: white;
+                border: 1px solid #ebe0c7;
+                padding: 20px;
+                border-radius: 10px;
+                min-height: inherit;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             /* Add Flexbox properties */
+                 display: flex;
+                 flex-direction: column; /* Stack items vertically */
+                 justify-content: space-between; /* Push content to top and bottom */
+                 align-items: center;
+            }
+    
+            /* Carousel Tag Styles */
+            .carousel-tag {
+                background-color: #ebe0c7;
+                align-items: center;
+                overflow-wrap: break-word;
+                color: #6d5b31;
+                padding: 5px 10px;
+                border-radius: 20px;
+                text-transform: none;
+                font-weight: 300;
+                margin: 5px;
+            }
+    
+            /* Navigation Dots */
+            .carousel-navigation {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                margin-bottom: 80px;
+            }
+    
+            .carousel-navigation .dot {
+                width: 12px;
+                height: 12px;
+                background-color: #a68b01; /* Default dot background */
+                border-radius: 50%;
+                margin: 0 5px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+    
+            /* Active Dot */
+            .carousel-navigation .dot.active {
+                background-color: transparent; /* Transparent center */
+                border: 2px solid #a68b01; /* Solid border matching inactive dots */
+                width: 12px; /* Keep the dot size consistent */
+                height: 12px; /* Ensure consistent size */
+            }
+    
+            /* Hover Effect (optional) */
+            .carousel-navigation .dot:hover {
+                background-color: #a68b01;
+                border: 2px solid #a68b01;
+            }
+    
+            /* Arrows */
+            .arrow {
+                cursor: pointer;
+                width: 20px;
+                height: auto;
+                z-index: 10; /* Ensure arrows are above the carousel */
+            }
+    
+            .left-arrow {
+                margin-left: 10px;
+                margin-right: 20px;
+                color:#a68b01
+            }
+    
+            .right-arrow {
+                margin-left: 20px;
+                margin-right: 10px;
+                color:#a68b01
+            }
+    }
+
+/* MOBILE: Between 0px - 600px */
+@media (max-width: 599px) {
+
+    .intro,.section-divider-wrapper,.adventura-section, .vitis-section,.tempus-section, .carousel-wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .intro {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        line-height: 1.6;
+        text-align: left;
+        max-width: 100%; /* Ensure it doesn't exceed the container width */
+    }
+
+    .intro p {
+        text-align: left;
+        max-width: 100%; /* Ensure it doesn't exceed the container width */
+    }
+
+    /* Project Column */
+    .adventura-section, .vitis-section, .tempus-section {
+        display: flex;
+        flex-direction: column-reverse; /* Reverse order: image above text */
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Adjusts spacing between the image and text */
+        text-align: center; /* Center-align text for smaller screens */
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .image-column {
+        order: 1;
+        justify-content: center;
+        box-shadow: none;
+    }
+
+    .image-column img {
+        max-width: 300px;
+        width:100%;
+        height: auto;
+
+    }
+
+    .text-column {
+        width: 100%; /* Text also takes full width */
+        text-align: left;
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: column; /* Stack the tags vertically */
+        gap: 8px; /* Adds spacing between each tag */
+        align-items: center; /* Center-aligns tags within the container */
+        margin-top: 20px;
+    }
+
+    .tag {
+        background-color: #ebe0c7;
+        color: #6d5b31;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: none;
+    }
+
+    .tags-horizontal {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Controls the spacing between tags */
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+    .carousel-wrapper {
+        max-width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    .carousel-items {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+            width: 100%; /* Ensures the container stretches horizontally */
+            justify-content: space-between;
+            gap: 10px; /* Adds space between the items */
+        }
+        
+        .carousel-item {
+            flex: 1 0 100%; 
+            max-width: 100%;
+            min-height: inherit;
+            box-sizing: border-box;
+            padding: 8px;
+            text-align: center;
+            height: auto;
+        }
+        
+        .carousel-page {
+            display: none; /* Hide all pages by default */
+        }
+        
+        .carousel-page.active {
+            display: flex; /* Display active carousel page */
+            flex-direction: column;
+        }
+        
+        
+        /* Carousel Content */
+        .carousel-content {
+            background-color: white;
+            border: 1px solid #ebe0c7;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 350px; /* Default height for larger screens */
+            height: 100%; /* Fill the available height */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        /* Content inside each carousel item */
+        .carousel-content {
+            background-color: white;
+            border: 1px solid #ebe0c7;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: inherit;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         /* Add Flexbox properties */
+             display: flex;
+             flex-direction: column; /* Stack items vertically */
+             justify-content: space-between; /* Push content to top and bottom */
+             align-items: center;
+        }
+
+        /* Carousel Tag Styles */
+        .carousel-tag {
+            background-color: #ebe0c7;
+            align-items: center;
+            overflow-wrap: break-word;
+            color: #6d5b31;
+            padding: 5px 10px;
+            border-radius: 20px;
+            text-transform: none;
+            font-weight: 300;
+            margin: 5px;
+        }
+
+        /* Navigation Dots */
+        .carousel-navigation {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 80px;
+        }
+
+        .carousel-navigation .dot {
+            width: 12px;
+            height: 12px;
+            background-color: #a68b01; /* Default dot background */
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        /* Active Dot */
+        .carousel-navigation .dot.active {
+            background-color: transparent; /* Transparent center */
+            border: 2px solid #a68b01; /* Solid border matching inactive dots */
+            width: 12px; /* Keep the dot size consistent */
+            height: 12px; /* Ensure consistent size */
+        }
+
+        /* Hover Effect (optional) */
+        .carousel-navigation .dot:hover {
+            background-color: #a68b01;
+            border: 2px solid #a68b01;
+        }
+
+        /* Arrows */
+        .arrow {
+            cursor: pointer;
+            width: 20px;
+            height: auto;
+            z-index: 10; /* Ensure arrows are above the carousel */
+        }
+
+        .left-arrow {
+            margin-left: 10px;
+            margin-right: 20px;
+            color:#a68b01
+        }
+
+        .right-arrow {
+            margin-left: 20px;
+            margin-right: 10px;
+            color:#a68b01
+        }
+}
